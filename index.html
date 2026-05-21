@@ -88,6 +88,16 @@
 </button>
 </div>
 </nav>
+
+<!-- Mobile Menu (Hidden by default) -->
+<div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 bg-surface border-b border-outline-variant/30 shadow-lg p-6 flex-col gap-6 md:hidden">
+    <a class="text-secondary font-bold border-b-2 border-secondary pb-1 self-start" href="index.html">Anasayfa</a>
+    <a class="text-on-surface-variant font-medium self-start" href="hizmetler.html">Hizmetlerimiz</a>
+    <a class="text-on-surface-variant font-medium self-start" href="iletisim.html">İletişim</a>
+    <a class="flex items-center gap-2 bg-tertiary text-white px-5 py-3 rounded-full font-bold text-sm tracking-wide justify-center mt-2 shadow-md shadow-tertiary/20" href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank">
+        <span class="material-symbols-outlined text-sm">chat</span> WHATSAPP İLETİŞİM
+    </a>
+</div>
 </header>
 <main class="pt-20">
 <!-- Hero Section -->
@@ -249,7 +259,7 @@
 <section class="py-24 bg-white overflow-hidden">
 <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
 <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-primary mb-20">Sürecimiz</h2>
-<div class="relative flex flex-col md:flex-row justify-between items-start gap-12 md:gap-4">
+<div class="relative flex flex-col md:flex-row justify-between items-center md:items-start gap-12 md:gap-4">
 <!-- Connection Line -->
 <div class="hidden md:block absolute top-10 left-0 right-0 h-0.5 bg-outline-variant -z-0"></div>
 <!-- Step 1 -->
@@ -479,10 +489,13 @@
 
         // Simple Mobile Menu Toggle
         const mobileBtn = document.getElementById('mobile-menu-btn');
-        mobileBtn.addEventListener('click', () => {
-            // Logic for a real mobile menu would go here
-            alert('Mobil menü yakında hizmetinizde!');
-        });
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
 
         // Smooth reveal animations for cards
         const observerOptions = {

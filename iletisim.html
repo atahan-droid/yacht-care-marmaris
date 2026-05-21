@@ -20,6 +20,7 @@
                             DEFAULT: '#B8974F',
                             fixed: '#D4AF37'
                         },
+                        tertiary: '#2D5A27',
                         surface: {
                             DEFAULT: '#FFFFFF',
                             variant: '#F8F9FA'
@@ -58,40 +59,50 @@
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
 <!-- TopNavBar -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/85 glass-effect border-b border-outline-variant/30 shadow-sm h-20">
-<div class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-full">
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav bg-surface/85 border-b border-outline-variant/30 shadow-sm h-20">
+<nav class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-full">
 <!-- Brand Logo -->
 <a class="flex items-center gap-3 text-body-lg font-headline-md font-bold text-primary" href="index.html">
 <img src="logo.png" alt="Yacht Care Marmaris Logo" class="h-16 w-auto object-contain scale-[1.5] origin-left">
 <span class="ml-10">Yacht Care Marmaris</span>
 </a>
-<!-- Desktop Navigation -->
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-sm font-medium text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html">Anasayfa</a>
-<a class="text-sm font-medium text-on-surface-variant hover:text-secondary transition-colors duration-300" href="hizmetler.html">Hizmetlerimiz</a>
-<a class="text-sm font-bold text-secondary border-b-2 border-secondary pb-1" href="iletisim.html">İletişim</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-medium" href="index.html">Anasayfa</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-medium" href="hizmetler.html">Hizmetlerimiz</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 transition-colors duration-300" href="iletisim.html">İletişim</a>
+<div class="flex items-center gap-2 text-xs font-bold border-l pl-8 border-outline-variant">
+<span class="text-primary cursor-pointer">TR</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-on-surface-variant hover:text-primary cursor-pointer transition-colors">EN</span>
 </div>
-<!-- Actions -->
-<div class="flex items-center gap-6">
-<div class="hidden lg:flex items-center gap-2 text-xs font-bold text-on-surface-variant">
-<span class="text-primary">TR</span>
-<span class="text-outline-variant">|</span>
-<span class="hover:text-primary cursor-pointer transition-colors">EN</span>
 </div>
-<a class="hidden md:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full text-xs font-bold hover:scale-95 transition-transform duration-200" href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">
+<!-- CTA Action -->
+<div class="flex items-center gap-4">
+<a class="hidden md:flex items-center gap-2 bg-tertiary text-white px-5 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-tertiary/90 transition-all active:scale-95 shadow-md shadow-tertiary/20" href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank">
 <span class="material-symbols-outlined text-sm">chat</span>
                     WHATSAPP İLETİŞİM
                 </a>
-<button class="md:hidden text-primary">
+<button class="md:hidden text-primary" id="mobile-menu-btn">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
-</div>
 </nav>
+
+<!-- Mobile Menu (Hidden by default) -->
+<div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 bg-surface border-b border-outline-variant/30 shadow-lg p-6 flex-col gap-6 md:hidden">
+    <a class="text-on-surface-variant font-medium self-start" href="index.html">Anasayfa</a>
+    <a class="text-on-surface-variant font-medium self-start" href="hizmetler.html">Hizmetlerimiz</a>
+    <a class="text-secondary font-bold border-b-2 border-secondary pb-1 self-start" href="iletisim.html">İletişim</a>
+    <a class="flex items-center gap-2 bg-tertiary text-white px-5 py-3 rounded-full font-bold text-sm tracking-wide justify-center mt-2 shadow-md shadow-tertiary/20" href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank">
+        <span class="material-symbols-outlined text-sm">chat</span> WHATSAPP İLETİŞİM
+    </a>
+</div>
+</header>
 <main>
 <!-- Hero Section -->
 <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uiNeLgYRN6y04b1RGe2cyWa5d1HccO1mXNUR1LMbOIZX9vdCiGKtZXna9sMRVfM1difzyc3Vqp4E5STNYvA_yYuWMlSFbX4IZynjT81OOTbXPpTLLvtWHx4U0R3_vGC8DhoukKDaRhPSYqgYt7juzAFIQSeQHUU87a48sNnKMUxZZWBtO32PgZ0IOsMFfnU2dAnKeksyzTplAyvi2vNMuuvSIniUn7r-LfMZ3gnFBfz5i940-TZtGybw7A')"></div>
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyF2ychJuWWw7OtyvOWYKlS_JCn2iMvyCPm0dZBXWfUwVxIKwS-lZBZ6e0EdJJ6-JKXBfTkMovxXYR2J7iYqvrKVVxrOABX1CZGrCgQ5P3jR2s3G6Lzy33PvNPiRLSWOStbsMvq_yhfp9kliuLoqm1FSJxW8I1rqUDsFE8BrgIY_Y6nvy2qhtEP81tF2s_2oSIqMNdzoJ3v7VPkXn26XPokgCDfGTiq3gomBwSVOHvrohUf6Zz00KU2ujBNgG2V7oKrR3G378TSuE')"></div>
 <div class="absolute inset-0 bg-black/50"></div>
 <div class="relative z-10 text-center px-6 max-w-3xl">
 <h1 class="text-4xl md:text-6xl font-headline font-extrabold text-white mb-6 tracking-tight">İletişim</h1>
@@ -251,4 +262,15 @@
 <p>Tüm Hakları Saklıdır.</p>
 </div>
 </footer>
+<script>
+    // Simple Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    }
+</script>
 </body></html>
