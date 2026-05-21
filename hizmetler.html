@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hizmetlerimiz | Yacht Care Marmaris - Premium Yat ve Konut Temizliği</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0A1D37", // Navy
+                        secondary: "#C5A059", // Gold
+                        accent: "#1B4332", // Dark Green
+                        surface: "#FFFFFF",
+                        "on-surface": "#1A1C1E",
+                        "on-surface-variant": "#44474E",
+                        "outline-variant": "#C4C6D0",
+                        "surface-container-lowest": "#FFFFFF",
+                        "tertiary-container": "#D9E2FF"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Public Sans", "sans-serif"],
+                        display: ["Noto Serif", "serif"],
+                        body: ["Public Sans", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    spacing: {
+                        'margin-mobile': '1rem',
+                        'gutter': '2rem',
+                        'section-padding': '5rem',
+                        'container-max': '1280px'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-label-caps {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav bg-surface/85 border-b border-outline-variant/30 shadow-sm h-20">
+<nav class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-full">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 text-body-lg font-headline-md font-bold text-primary" href="index.html">
+<img src="logo.png" alt="Yacht Care Marmaris Logo" class="h-16 w-auto object-contain scale-[1.5] origin-left">
+<span class="ml-10">Yacht Care Marmaris</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-medium" href="index.html">Anasayfa</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 transition-colors duration-300" href="hizmetler.html">Hizmetlerimiz</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-medium" href="iletisim.html">İletişim</a>
+<div class="flex items-center gap-2 text-xs font-bold border-l pl-8 border-outline-variant">
+<span class="text-primary cursor-pointer">TR</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-on-surface-variant hover:text-primary cursor-pointer transition-colors">EN</span>
+</div>
+</div>
+<!-- CTA Action -->
+<div class="flex items-center gap-4">
+<a class="hidden md:flex items-center gap-2 bg-tertiary text-white px-5 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-tertiary/90 transition-all active:scale-95 shadow-md shadow-tertiary/20" href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+                    WHATSAPP İLETİŞİM
+                </a>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<header class="relative h-[614px] md:h-[716px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img alt="Luxury Yacht Deck" class="absolute inset-0 w-full h-full object-cover" data-alt="A high-angle view of a pristine, luxury white yacht deck sailing on the turquoise waters of the Aegean Sea near Marmaris. The morning sun casts long, soft shadows across the teak flooring and plush white lounging areas. The atmosphere is extremely high-end, serene, and bright, reflecting a world-class maritime lifestyle. The color palette is dominated by deep ocean blues, crisp yacht whites, and warm golden teak tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Zxo37bWLHOAz9mGNzrxVoj-6mhooRsn5WJOvozUERa92tTgOHM6uBZaEZ-rhE_fI-vbuAauLbVAvoScJfCqQhmeGqE96OfPeJ9OI6gecG5QPo30I88u6zsMfTKzYHjngJlFC2o4N4h_mBJzhAn-W7McbLedH-QERa5Gu9Q4zQCb29jckAKPpl9YAWQVvy6VmrZIFezuMMAw2eU0oigFVsUypJc7EHihimPhCSE15O7l8r7Bvk3sKvVvPXuQBAFzz2hfmuiVxSIw"/>
+<div class="relative z-20 text-center text-white px-margin-mobile">
+<h1 class="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight">Hizmetlerimiz</h1>
+<p class="text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                Yatınız ve yaşam alanlarınız için dünya standartlarında profesyonel temizlik çözümleri.
+            </p>
+</div>
+</header>
+<!-- Services Container -->
+<main class="max-w-container-max mx-auto py-section-padding px-margin-mobile md:px-gutter">
+<!-- Service 1: Yat Temizliği (Image Left, Text Right) -->
+<section class="grid md:grid-cols-2 gap-12 items-center mb-section-padding" id="yat-temizligi">
+<div class="order-2 md:order-1 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A detailed shot of a professional cleaning specialist polishing the stainless steel railings of a luxury yacht under bright, clear coastal sunlight. The background shows the sparkling blue sea and the sophisticated teak deck of the vessel. The scene conveys meticulous care, luxury maintenance, and professional expertise with a focus on high-contrast surfaces and crystalline reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMvYrVRGW0VOgXsqNDLLFJoHxnmx2hPk-5CTx_c6kT7LEHeFtb6bh_YfD1AHqvMGzqHIKmoGaXSRqd3JrM_gA65V2dLTPx7EX_ksKQMFdalh98el9ziRlRCWZMjZs3YyQ1fGobOBI8BZ9nkhh-xluGCxgVAVtkE-iGtJWZLnMxZ-z4Y6-P_TYLSrzBq8C6dHGBU8vladt4x--r9m-uLXcxA0k8rkcKZEadMiHHE7fCvXA2AXXTktwwwDMoCfH1IzbHE0m4fCgWyFU"/>
+</div>
+<div class="order-1 md:order-2 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">YAT TEMİZLİĞİ</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">Yat Temizliği</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Yatınızın iç kabin ve güvertesi için kapsamlı temizlik hizmeti sunuyoruz. Teak bakımı, paslanmaz çelik parlatma ve detaylı iç kabin temizliği ile teknenizi ilk günkü ihtişamına kavuşturuyoruz.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</section>
+<!-- Service 2: Yangın Koruma (Image Right, Text Left) -->
+<section class="grid md:grid-cols-2 gap-12 items-center mb-section-padding" id="yangin-koruma">
+<div class="order-1 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">GÜVENLİK STANDARTLARI</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">Yangın Koruma Uygulaması</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Denizde güvenlik en önemli önceliğimizdir. Kumaşlar, perdeler ve döşemeler için uyguladığımız özel yanmazlık solüsyonları ile yangın riskini minimize ediyor, yaşam alanlarınızı uluslararası standartlarda koruma altına alıyoruz.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="order-2 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A close-up shot of elegant interior upholstery and heavy velvet curtains inside a luxury ship cabin. The lighting is warm and ambient, highlighting the texture of the fire-retardant treated fabrics. The composition is sophisticated and safe, emphasizing protection without compromising the high-end aesthetic of the marine interior design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv7uBeaT4EHRcRnMvykvfQK0Erv82bOVcXw_VhPsZ_kAF9mm17NZXVJsoo4oucdH4EDysIRCEjPmKjPMncsIClaRCvE8yjE-SNq13gP5ukVW9Yra9ILWD4XFJg1vHbaYMDyMT4OoNu0Tnc027tY7en0eGg2i19V942Cgfj0pNWBZE_IV1i3ps4ONwDqBaCzbcR5VyZPk5OcGLX-fk2Deg-Yh56xQJ6fP5Q_HPyZoKyVdjXMmYFsw21HAWDL9tkHa88U9F0_66dAPA"/>
+</div>
+</section>
+<!-- Service 3: Ozon Temizliği (Image Left, Text Right) -->
+<section class="grid md:grid-cols-2 gap-12 items-center mb-section-padding" id="ozon-temizligi">
+<div class="order-2 md:order-1 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A sleek ozone generator machine operating in the center of a minimalist, modern yacht cabin. The air looks crisp and bright, with soft daylight filtering through portholes. The mood is clinical yet luxurious, suggesting absolute purity and sterile cleanliness in an upscale environment. The colors are dominated by soft whites, cool greys, and navy accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB0M8ZpsVrbUhbY4Fe-AbFV8_E41heXFHCJAi8gSTxRcpOVZBylnKYKltdmScNyjmJY-IFd-JLGVo8pxRlNMzq3NTGdevpjyl3gVIS75zRwWrBLs_Id1HE7xFOJnMU1fT1HbPUhmpm4Iyta-OHqaj3tUb6h_bm3NvpHwC_5Icrd0sZbUT4wuImyK1-IPVrxjk-ixc1EAJDKu0VlYkS3g-b8v1C3I-WP0STY-OVbpJS_lkWgiBwu1q3i13wj9bWvwAppRKS3Azp-I"/>
+</div>
+<div class="order-1 md:order-2 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">HAVA KALİTESİ</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">Ozon Temizliği</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Yat kabinlerindeki istenmeyen kokuları, bakteri ve virüsleri %99.9 oranında yok ediyoruz. Kimyasal kullanmadan gerçekleştirdiğimiz ozon temizliği ile teknenizde taze ve steril bir hava yaratıyoruz.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</section>
+<!-- Service 4: Airbnb Temizliği (Image Right, Text Left) -->
+<section class="grid md:grid-cols-2 gap-12 items-center mb-section-padding" id="airbnb-temizligi">
+<div class="order-1 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">EV TEMİZLİĞİ</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">Airbnb Evlerinin Temizliği</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Marmaris'teki lüks kiralık mülkleriniz için otel konforunda temizlik sunuyoruz. Her misafir öncesi titizlikle hazırlanan yaşam alanları ile yüksek puanlar ve memnuniyet garantiliyoruz.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="order-2 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A beautifully staged bedroom in a luxury Marmaris villa with crisp white linens, folded towels, and a single eucalyptus branch on the bed. The room is flooded with warm, natural Mediterranean light. The aesthetic is five-star hotel quality, clean, and inviting, showcasing premium property management and preparation for high-end guests." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu8sFHwKsFrkqev_cV-YR3dh4zRvXfPie25VX8DgS00dB9r1Vx7Uuy78OOxZpKUQR4iUu1gMrsUKnBFC-PdAmY7nUVEn07_cvZcWEkxokFibDeYvhKFuSAA_0_GfK6MmjLe_nDXSem8aVwgjJdUXzUbzjlsv9iUzlCfzlLg1hd2NThOw0bhP2LvMkO5TfJp2P7E14BZVd_1d9SJRV-WHZ6IS9FBTRMjpQGW93QoXJM7NxFYNcDZyLCr_oo3R8vXIY34-bxXYT9XVE"/>
+</div>
+</section>
+<!-- Service 5: İnşaat Sonrası (Image Left, Text Right) -->
+<section class="grid md:grid-cols-2 gap-12 items-center mb-section-padding" id="insaat-sonrasi">
+<div class="order-2 md:order-1 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A high-end modern apartment with floor-to-ceiling windows being meticulously cleaned after a renovation. Professional cleaners use industrial vacuum systems on marble floors. The lighting is bright and airy, highlighting the transition from construction site to a pristine, move-in ready luxury home. The color palette features whites, greys, and the deep green of the cleaning equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt4x3kQtogmr89LZoXQVmjh5bwtVXMOhF5Oz5sm_y0ZGB946lDkP_4xrnhhBkWr6JVq1zWADo_xxJzVbVfbeWQ1K7Bf0abyiHqKNscnMAcSN11T1-aFtEu1wcsaAdHZR0BxOYchSJjsR5fbtlgwn81eI6_ixTwmwdjJCCpjO3T0mUXIjwTTufZbTtrlsld4cFJ0kQBJoHMl5EMqQORACIijREqXbR1UJHWidmagyEKdwuyh1irYpJmpwfSwhg6mdAO3ls4ZeUZ4jk"/>
+</div>
+<div class="order-1 md:order-2 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">İNŞAAT TEMİZLİĞİ</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">İnşaat Sonrası Temizlik</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Yeni tamamlanan projelerinizde veya tadilat sonrası mülklerinizde inşaat kalıntılarını profesyonel ekipmanlarımızla temizliyoruz. Hassas yüzeylere zarar vermeden, yaşam alanınızı teslimata hazır hale getiriyoruz.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</section>
+<!-- Service 6: Çamaşır Hizmetleri (Image Right, Text Left) -->
+<section class="grid md:grid-cols-2 gap-12 items-center" id="camasir-hizmetleri">
+<div class="order-1 space-y-6">
+<span class="text-secondary text-label-caps tracking-widest block">TEKSTİL HİZMETLERİ</span>
+<h2 class="text-3xl md:text-4xl font-display text-primary">Çamaşır Hizmetleri</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Yat personeli ve misafirleri için profesyonel çamaşır ve kuru temizleme hizmeti sunuyoruz. Hassas kumaşlarınız, nevresimleriniz ve üniformalarınız en kaliteli deterjanlarla yıkanıp, titizlikle paketlenerek teknenize teslim edilir.
+                </p>
+<a href="iletisim.html#bize-yazin" class="inline-flex bg-accent text-white px-8 py-3 rounded-lg text-label-caps items-center gap-3 hover:bg-accent/90 transition-all shadow-lg hover:-translate-y-1">Teklif Al <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="order-2 rounded-xl overflow-hidden aspect-[4/3] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Stack of perfectly folded, bright white luxury towels and linens on a wooden table, branded with a subtle navy logo. The background is a clean, bright professional laundry facility. The image emphasizes freshness, organization, and high-quality textile care. The lighting is high-key and soft, creating a sense of pristine hygiene and premium service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6miJx9UuDrK-P8CCZL4pxuWBx5zey5lpAc7IIgzdDMEL1IXR7Z94yyGwu6Wf5zWjaqlHfFQDcJdUWHo3fpzq9-2kiXfp7a2U5MXUJnk1sW0LWscZ5CFsPl2Tr_quHH27JTNo3On9VhY3tfxMFDP5arGT-hovC7Il-VIdwaYmmGi7BDYMbrBMSbNJU1yHkjEKGm-xNKlvrzQCisvsVCFKNMt1nw-ByMicN2Z_Qjc-oXMznndndQKexUAlGXy65lzapSVeaM_4bnBY"/>
+</div>
+</section>
+</main>
+<!-- Contact CTA Section -->
+<section class="bg-primary py-24 mt-20">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center text-white">
+<h2 class="text-3xl md:text-4xl font-display mb-8">Hizmetlerimiz hakkında bilgi almak ister misiniz?</h2>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<a href="https://wa.me/905337012090?text=Merhaba,%20yat%20temizlik%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="inline-flex bg-accent text-white px-10 py-4 rounded-full text-label-caps text-sm items-center gap-3 hover:bg-accent/90 transition-all hover:scale-105 shadow-xl"><span class="material-symbols-outlined">chat</span> WhatsApp İletişim Hattı</a>
+<a href="tel:+905337012090" class="inline-flex border border-white/30 text-white px-10 py-4 rounded-full text-label-caps text-sm items-center gap-3 hover:bg-white/10 transition-all"><span class="material-symbols-outlined">phone_in_talk</span> Bizi Arayın</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<!-- Col 1 -->
+<div class="space-y-6">
+<a class="inline-flex items-center gap-3" href="index.html">
+<img src="logo.png" alt="Yacht Care Marmaris Logo" class="h-12 w-auto object-contain">
+<span class="text-2xl font-headline font-extrabold text-primary">Yacht Care</span>
+</a>
+<p class="text-on-surface-variant leading-relaxed">Marmaris merkezli, denizcilik tutkusuyla profesyonel temizlik çözümleri sunan premium bakım servisiniz.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+</a>
+</div>
+</div>
+<!-- Col 2 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Hizmetler</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#yat-temizligi">Yat Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#yangin-koruma">Yangın Koruma Uygulaması</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#ozon-temizligi">Ozon Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#airbnb-temizligi">Airbnb Ev Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#insaat-sonrasi">İnşaat Sonrası Temizlik</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#camasir-hizmetleri">Çamaşır Hizmetleri</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Yasal &amp; Kurumsal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="cerez-politikasi.html">Çerez Politikası</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="index.html">Hakkımızda</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Bize Ulaşın</h4>
+<p class="text-on-surface-variant mb-6">Sorularınız için bizimle her zaman iletişime geçebilirsiniz.</p>
+<a class="flex items-center gap-3 bg-primary text-white p-4 rounded-xl font-bold justify-center hover:bg-primary/90 transition-all focus:ring-2 focus:ring-secondary focus:outline-none" href="tel:+905337012090">
+<span class="material-symbols-outlined">call</span>
+                    +90 533 701 2090
+                </a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant text-sm gap-4">
+<p>© 2026 Yacht Care Marmaris. Premium Denizcilik Hizmetleri.</p>
+<p>Tüm Hakları Saklıdır.</p>
+</div>
+</footer>
+</body></html>

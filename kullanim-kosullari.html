@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;family=Noto+Serif:wght@700&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#002147",
+              "on-primary": "#FFFFFF",
+              "secondary": "#003366",
+              "surface": "#FFFFFF",
+              "surface-variant": "#F3F4F6",
+              "on-surface": "#1F2937",
+              "on-surface-variant": "#4B5563",
+              "outline-variant": "#E5E7EB",
+              "primary-fixed": "#002147",
+              "secondary-fixed": "#003366"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "2xl": "1rem",
+              "full": "9999px"
+            },
+            fontFamily: {
+              "headline": ["Public Sans", "sans-serif"],
+              "display": ["Noto Serif", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F3F4F6;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopNavBar Alignment from JSON -->
+<header class="bg-surface/85 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-outline-variant/30 h-20">
+<nav class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-full">
+<div class="text-body-lg font-headline font-bold text-primary">
+                Yacht Care Marmaris
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-sm font-semibold tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300" href="hizmetler.html">Hizmetlerimiz</a>
+<a class="text-sm font-semibold tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html">Hakkımızda</a>
+<a class="text-sm font-semibold tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html">Süreç</a>
+<a class="text-sm font-semibold tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-300" href="iletisim.html">İletişim</a>
+<a class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-secondary transition-transform active:scale-95 duration-200" href="#">WhatsApp Destek</a>
+</div>
+<!-- Mobile Toggle Placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</nav>
+</header>
+<main class="max-w-4xl mx-auto px-4 py-12 md:py-20">
+<!-- Navigation Back Link -->
+<div class="mb-8">
+<a class="group flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="index.html">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="text-sm font-semibold font-label tracking-wide">Ana Sayfaya Dön</span>
+</a>
+</div>
+<!-- Central Document Card -->
+<article class="bg-white rounded-2xl shadow-xl shadow-gray-200/50 overflow-hidden border border-outline-variant/20">
+<!-- Header Section -->
+<div class="px-8 md:px-16 pt-12 pb-8 border-b border-outline-variant/10 bg-slate-50/30">
+<h1 class="font-display text-4xl md:text-5xl text-primary font-bold mb-4">Kullanım Koşulları</h1>
+<p class="text-on-surface-variant text-sm font-medium">Son Güncelleme: Mayıs 2026</p>
+</div>
+<!-- Content Section -->
+<div class="px-8 md:px-16 py-12 space-y-12">
+<!-- 1. Taraflar ve Kabul -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">1</span>
+                        Taraflar ve Kabul
+                    </h2>
+<p class="leading-relaxed text-on-surface/80">
+                        Bu web sitesini ("Site") ziyaret ederek veya Yacht Care Marmaris tarafından sunulan hizmetlerden yararlanarak, aşağıda belirtilen kullanım koşullarını tamamen okuduğunuzu, anladığınızı ve hukuki olarak bağlı kalmayı kabul ettiğinizi beyan edersiniz.
+                    </p>
+</section>
+<!-- 2. Fikri Mülkiyet Hakları -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">2</span>
+                        Fikri Mülkiyet Hakları
+                    </h2>
+<p class="leading-relaxed text-on-surface/80">
+                        Sitede yer alan tüm metinler, grafikler, logolar, görseller, teknik çizimler ve yazılımlar dahil olmak üzere tüm içerik Yacht Care Marmaris'e aittir. Bu içerikler Türk fikri mülkiyet hukuku, telif hakları ve ilgili uluslararası anlaşmalar ile korunmaktadır. Önceden yazılı izin alınmaksızın kopyalanamaz veya ticari amaçla kullanılamaz.
+                    </p>
+</section>
+<!-- 3. Kullanıcı Yükümlülükleri -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">3</span>
+                        Kullanıcı Yükümlülükleri
+                    </h2>
+<ul class="space-y-4 list-none">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span class="text-on-surface/80">Site üzerindeki formlar aracılığıyla paylaşılan tüm bilgilerin doğru, güncel ve eksiksiz olması kullanıcının sorumluluğundadır.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span class="text-on-surface/80">Site altyapısına zarar verecek siber saldırılar, kötü amaçlı yazılım yüklemeleri veya veri madenciliği gibi faaliyetlerde bulunulamaz.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+<span class="text-on-surface/80">Sitenin yasa dışı amaçlarla, başkalarının haklarını ihlal edecek şekilde veya denizcilik etiğine aykırı faaliyetler için kullanılması yasaktır.</span>
+</li>
+</ul>
+</section>
+<!-- 4. Hizmet ve İçerik Değişiklikleri -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">4</span>
+                        Hizmet ve İçerik Değişiklikleri
+                    </h2>
+<p class="leading-relaxed text-on-surface/80">
+                        Yacht Care Marmaris, Site üzerinde sunulan hizmetlerin kapsamını, fiyatlandırmasını, teknik detaylarını veya Sitenin genel görünümünü dilediği zaman önceden haber vermeksizin değiştirme veya hizmeti tamamen durdurma hakkını saklı tutar.
+                    </p>
+</section>
+<!-- 5. Sorumluluk Reddi -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">5</span>
+                        Sorumluluk Reddi
+                    </h2>
+<p class="leading-relaxed text-on-surface/80">
+                        Site, "olduğu gibi" ve "mevcut olduğu kadarıyla" sunulmaktadır. Sitenin kullanımından doğabilecek dolaylı, arızi veya cezai zararlardan, veri kayıplarından veya teknik aksaklıklardan Yacht Care Marmaris hukuki sorumluluk kabul etmez.
+                    </p>
+</section>
+<!-- 6. Uyuşmazlıkların Çözümü -->
+<section>
+<h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded bg-primary/5 text-primary text-sm">6</span>
+                        Uyuşmazlıkların Çözümü
+                    </h2>
+<p class="leading-relaxed text-on-surface/80">
+                        Bu sözleşmenin yorumlanması ve uygulanmasında Türk hukuku geçerlidir. Taraflar arasında doğabilecek her türlü uyuşmazlığın çözümünde Muğla (Marmaris) Mahkemeleri ve İcra Daireleri yetkilidir.
+                    </p>
+</section>
+</div>
+<!-- Footer Contact Area within Card -->
+<div class="px-8 md:px-16 py-10 bg-surface-variant/50 border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h4 class="text-primary font-bold mb-1">Daha fazla bilgiye mi ihtiyacınız var?</h4>
+<p class="text-on-surface-variant text-sm">Koşullarımız hakkında sorularınız için bizimle iletişime geçebilirsiniz.</p>
+</div>
+<a class="flex items-center gap-2 bg-white border border-outline-variant px-5 py-2.5 rounded-lg text-primary font-bold hover:shadow-md transition-all" href="mailto:info@yachtcaremarmaris.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        info@yachtcaremarmaris.com
+                    </a>
+</div>
+</div>
+</article>
+</main>
+<!-- Footer Content Alignment -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<!-- Col 1 -->
+<div class="space-y-6">
+<a class="inline-flex items-center gap-3" href="index.html">
+<img src="logo.png" alt="Yacht Care Marmaris Logo" class="h-12 w-auto object-contain">
+<span class="text-2xl font-headline font-extrabold text-primary">Yacht Care</span>
+</a>
+<p class="text-on-surface-variant leading-relaxed">Marmaris merkezli, denizcilik tutkusuyla profesyonel temizlik çözümleri sunan premium bakım servisiniz.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+</a>
+</div>
+</div>
+<!-- Col 2 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Hizmetler</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#yat-temizligi">Yat Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#yangin-koruma">Yangın Koruma Uygulaması</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#ozon-temizligi">Ozon Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#airbnb-temizligi">Airbnb Ev Temizliği</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#insaat-sonrasi">İnşaat Sonrası Temizlik</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="hizmetler.html#camasir-hizmetleri">Çamaşır Hizmetleri</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Yasal &amp; Kurumsal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="cerez-politikasi.html">Çerez Politikası</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary hover:translate-x-1 inline-block transition-all" href="index.html">Hakkımızda</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase tracking-widest text-sm">Bize Ulaşın</h4>
+<p class="text-on-surface-variant mb-6">Sorularınız için bizimle her zaman iletişime geçebilirsiniz.</p>
+<a class="flex items-center gap-3 bg-primary text-white p-4 rounded-xl font-bold justify-center hover:bg-primary/90 transition-all focus:ring-2 focus:ring-secondary focus:outline-none" href="tel:+905337012090">
+<span class="material-symbols-outlined">call</span>
+                    +90 533 701 2090
+                </a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant text-sm gap-4">
+<p>© 2026 Yacht Care Marmaris. Premium Denizcilik Hizmetleri.</p>
+<p>Tüm Hakları Saklıdır.</p>
+</div>
+</footer>
+</body></html>
